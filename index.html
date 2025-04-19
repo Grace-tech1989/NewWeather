@@ -28,24 +28,34 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form class="search-form">
           <input
             type="search"
             placeholder="Enter a city"
-            required
+            class="search-form-input"
           />
           <input
             type="submit"
             value="search"
+            class="search-form-button"
           />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Nigeria</h1>
-          <p>Saturday 12:57, light rain <br />Humidity: 61%, Wind: 4.63km/h</p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Nigeria</h1>
+            <p class="weather-app-details">
+              Saturday 12:57, light rain <br />Humidity:
+              <strong>61%,</strong> Wind: <strong> 4.63km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature">20</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>⛅20°C</div>
       </main>
 
       <footer>
@@ -53,7 +63,7 @@
         <a
           href="https://github.com/Grace-tech1989 "
           target="_blank"
-          >GraceO</a
+          >Grace.O</a
         >, open-sourced on
         <a
           href="https://github.com/Grace-tech1989/NewWeather"
